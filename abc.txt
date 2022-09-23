@@ -1,0 +1,37 @@
+-- create database de_accelerator;
+-- use de_accelerator;
+CREATE TABLE if not exists de_accelerator
+         (f1 INT not null auto_increment primary key,
+            s1 varchar(50),
+         s2 varchar(50),
+         s3 varchar(50),
+         s4 varchar(50),
+         s5 varchar(50),
+         s6 varchar(50),
+         s7 varchar(50),
+         s8 varchar(50),
+         s9 varchar(50),
+         s10 varchar(50),
+         s11 varchar(50),
+         s12 varchar(50));
+
+
+
+select * from de_accelerator;
+describe de_accelerator;
+truncate table de_accelerator;
+alter table de_accelerator add f1 INT not null;
+drop table de_accelerator;
+
+
+
+CREATE TABLE if not exists accounts(
+    username varchar(50) not null primary key,
+    password varchar(50) not null,
+    email varchar(50) not null
+);
+
+
+
+select * from accounts;
+drop table accounts;
